@@ -29,6 +29,7 @@ export async function POST(req) {
     const { error } = schema.validate(name, email, password, role)
 
     if (error) {
+        console.log(error)
         return NextResponse.json({
             success: false,
             message: email.details[0]
@@ -63,7 +64,7 @@ export async function POST(req) {
         }
     }
     catch (error) {
-        console.log('Error in new user registration')
+        console.log('Error while registering new user. Please try again.')
 
         return NextResponse.json({
             success: false,
