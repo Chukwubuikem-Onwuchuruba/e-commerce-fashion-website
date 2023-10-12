@@ -10,7 +10,7 @@ export const registerNewUser = async (formData) => {
             body: JSON.stringify(formDataormData)
         })
 
-        const finalData = response.json()
+        const finalData = await response.json()
 
         return finalData
 

@@ -49,7 +49,7 @@ export default function Navbar() {
   const { showNavModal, setShowNavModal } = useContext(GlobalContext);
   const {
     user,
-    isAuthUser,
+    isAuthUser, 
     setIsAuthUser,
     setUser,
     currentUpdatedProduct,
@@ -90,7 +90,7 @@ export default function Navbar() {
             className="flex items-center cursor-pointer"
           >
             <span className="slef-center text-2xl font-semibold whitespace-nowrap">
-              Ecommercery
+              Ecommerce
             </span>
           </div>
           <div className="flex md:order-2 gap-2">
