@@ -189,17 +189,17 @@ export const navOptions = [
   ];
   
   export const firebaseConfig = {
-    apiKey: "API_KEY",
-    authDomain: "AUTH_DOMAIN",
-    projectId: "PROJECT_ID",
-    storageBucket: "STROAGE_BUCKET",
-    messagingSenderId: "MESSAGING_SENDER_ID",
-    appId: "APP_ID",
-    measurementId: "MEASUREMENT_ID",
+    apiKey: "AIzaSyCHreWdmWI2TZzxosdZ29oIy1KqVAHJiYI",
+    authDomain: "e-commerce-fashion-websi-ec539.firebaseapp.com",
+    projectId: "e-commerce-fashion-websi-ec539",
+    storageBucket: "e-commerce-fashion-websi-ec539.appspot.com",
+    messagingSenderId: "527499771508",
+    appId: "1:527499771508:web:9f4363dcfbb396785a1b21",
+    measurementId: "G-VKBT3NW3CG"
   };
   
-  export const firebaseStroageURL =
-    "YOUR_FIREBASE_STROAGE_URL";
+  export const firebaseStorageURL =
+    "gs://e-commerce-fashion-websi-ec539.appspot.com";
   
   export const addNewAddressFormControls = [
     {
