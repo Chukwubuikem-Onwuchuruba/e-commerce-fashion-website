@@ -4,10 +4,6 @@ import Joi from "joi";
 import jwt from 'jsonwebtoken'
 import { NextResponse } from "next/server";
 
-
-
-
-
 const schema = Joi.object({
     email: Joi.string().email().required(),
     password: Joi.string().required()
@@ -75,7 +71,7 @@ export async function POST(req) {
 
         return NextResponse.json({
             success: false,
-            message: 'Something went wrong! Please try again later'
+            message: 'Something went wrong! Please try again later.'
         })
     }
 
