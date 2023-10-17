@@ -47,12 +47,12 @@ export async function PUT(req) {
       if (updatedProduct) {
         return NextResponse.json({
           success: true,
-          message: "Product updated successfully",
+          message: "Product updated successfully.",
         });
       } else {
         return NextResponse.json({
           success: false,
-          message: "Failed to update the product! Please try again later",
+          message: "Failed to update the product! Please try again later.",
         });
       }
     } else {
@@ -65,7 +65,7 @@ export async function PUT(req) {
     console.log(error);
     return NextResponse.json({
       success: false,
-      message: "Something went wrong! Please try again later",
+      message: "Something went wrong! Please try again later.",
     });
   }
 }

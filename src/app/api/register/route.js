@@ -46,7 +46,7 @@ export async function POST(req) {
 
             return NextResponse.json({
                 success: false,
-                message: 'User already exists. Please try with a different email'
+                message: 'User already exists. Please try with a different email.'
             })
         } else {
             const hashPassword = await hash(password, 12);
@@ -58,7 +58,7 @@ export async function POST(req) {
             if (newlyCreatedUser) {
                 return NextResponse.json({
                     success: true,
-                    message: 'Account created successfully'
+                    message: 'Account created successfully.'
                 })
             }
         }
@@ -68,7 +68,7 @@ export async function POST(req) {
 
         return NextResponse.json({
             success: false,
-            message: 'Something went wrong! Please try again later'
+            message: 'Something went wrong! Please try again later.'
         })
     }
 
