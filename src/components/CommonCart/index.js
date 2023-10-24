@@ -81,7 +81,7 @@ export default function CommonCart({
                     ))}
                   </ul>
                 ) : (
-                  <h1 className="font-bold text-lg">Your cart is Empty !</h1>
+                  <h1 className="font-bold text-lg">Your cart is empty!</h1>
                 )}
               </div>
               <div className="mt-6 border-t border-b py-2">
