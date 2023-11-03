@@ -47,7 +47,7 @@ export async function POST(req) {
       if (newlyAddedAddress) {
         return NextResponse.json({
           success: true,
-          message: "Address added successfully",
+          message: "Address added successfully.",
         });
       } else {
         return NextResponse.json({
