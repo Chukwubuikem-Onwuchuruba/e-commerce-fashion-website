@@ -13,4 +13,4 @@ const connectToDB = async () => {
     mongoose.connect(connectionUrl, configOptions).then(() => console.log('E-commerce Fashion Website Database connected successfully!')).catch((err) => console.log(`Getting Error from DB connection ${err.message}`))
 }
 
-export default connectTODB
+export default connectToDB
