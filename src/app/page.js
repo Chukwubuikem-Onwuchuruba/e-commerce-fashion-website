@@ -1,5 +1,5 @@
 "use client";
-
+import homeImg from './homePic.png'
 import { GlobalContext } from "@/context";
 import { getAllAdminProducts } from "@/services/product";
 import { useRouter } from "next/navigation";
@@ -34,8 +34,9 @@ export default function Home() {
               Best Fashion Collection
             </h1>
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
-              Quisquemos sodales suscipit tortor ditaemcos condimentum de cosmo
-              lacus meleifend menean diverra loremous.
+            Elevate your style with handpicked, trendsetting pieces that define your unique fashion statement.
+            Discover a curated selection of high-quality clothing, accessories, and more.  Discover a curated selection of high-quality clothing, 
+            accessories, and more.
             </p>
 
             <button
@@ -48,7 +49,8 @@ export default function Home() {
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img
-              src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+              //src="https://images.unsplash.com/photo-1619208382871-96f4d45bc840?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="https://i.pinimg.com/564x/8f/aa/05/8faa05656a454aedf0980fcbb25f3fe1.jpg"
               alt="Explore Shop Collection"
             />
           </div>
@@ -59,7 +61,7 @@ export default function Home() {
               <div className="max-w-md mx-auto text-center lg:text-left">
                 <div>
                   <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
-                    Fall and Summer Sale Collection
+                    Fall and Winter Sale Collection
                   </h2>
                 </div>
                 <button
@@ -117,7 +119,7 @@ export default function Home() {
             <li>
               <div className="relative block group">
                 <img
-                  src="https://images.unsplash.com/photo-1618898909019-010e4e234c55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                  src="https://i.pinimg.com/564x/3b/f1/00/3bf100d41eec9f6a9a17172e23647d26.jpg"
                   className="object-cover w-full aspect-square"
                 />
                 <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
@@ -134,7 +136,7 @@ export default function Home() {
             <li>
               <div className="relative block group">
                 <img
-                  src="https://images.unsplash.com/photo-1624623278313-a930126a11c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                  src="https://i.pinimg.com/564x/5f/a9/7a/5fa97aa3847a9c06b335073b262fa9f9.jpg"
                   className="object-cover w-full aspect-square"
                 />
                 <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
@@ -151,7 +153,7 @@ export default function Home() {
             <li className="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
               <div className="relative block group">
                 <img
-                  src="https://images.unsplash.com/photo-1593795899768-947c4929449d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2672&q=80"
+                  src="https://i.pinimg.com/564x/60/3c/1f/603c1f3168101195848b25bb55e4cb94.jpg"
                   className="object-cover w-full aspect-square"
                 />
                 <div className="absolute inset-0 flex flex-col items-start justify-end p-6">

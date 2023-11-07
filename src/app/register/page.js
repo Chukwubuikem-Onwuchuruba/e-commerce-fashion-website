@@ -75,7 +75,7 @@ export default function Register() {
             <div className="flex flex-col items-center justify-start pt-10 pr-10 pb-10 pl-10 bg-white shadow-2xl rounded-xl relative z-10">
               <p className="w-full text-4xl font-medium text-center font-serif">
                 {isRegistered
-                  ? "Registration Successfull !"
+                  ? "Registration Successfull!"
                   : "Sign up for an account"}
               </p>
               {isRegistered ? (
