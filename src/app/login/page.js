@@ -26,10 +26,8 @@ export default function Login() {
     componentLevelLoader,
     setComponentLevelLoader,
   } = useContext(GlobalContext);
-
+  
   const router = useRouter();
-
-  console.log(formData);
 
   function isValidForm() {
     return formData &&
@@ -41,7 +39,8 @@ export default function Login() {
       : false;
   }
 
-  async function handleLogin() {
+  async function handleLogin(event) {
+    event.preventDefault()
     setComponentLevelLoader({ loading: true, id: "" });
     const res = await login(formData);
 
@@ -65,6 +64,7 @@ export default function Login() {
       setComponentLevelLoader({ loading: false, id: "" });
     }
   }
+
 
   console.log(isAuthUser, user);
 
@@ -118,7 +118,15 @@ export default function Login() {
                   )}
                 </button>
                 <div className="flex flex-col gap-2">
-                  <p>New to website ?</p>
+                <button 
+                  className="text-blue-500 decoration-underline hover:decoration-underline decoration-blue-500" 
+                  onClick={() => {
+                    router.push("/forgot-password")
+                  }}
+                  >
+                    Forgot Password?
+                  </button>
+                  <p>New to website?</p>
                   <button
                     className="inline-flex w-full items-center justify-center bg-black px-6 py-4 text-lg 
                      text-white transition-all duration-200 ease-in-out focus:shadow font-medium uppercase tracking-wide

@@ -69,8 +69,8 @@ export const navOptions = [
       componentType: "select",
       options: [
         {
-          id: "admin",
-          label: "Admin",
+          id: "merchant",
+          label: "merchant",
         },
         {
           id: "customer",
@@ -96,7 +96,32 @@ export const navOptions = [
       componentType: "input",
     },
   ];
-  
+
+  export const resetPasswordFormControls = [
+    {
+      id: "email",
+      type: "email",
+      placeholder: "Enter your email",
+      label: "Email",
+      componentType: "input",
+    },
+  ];
+  export const setNewPasswordFormControls = [
+    {
+      id: "newPassword",
+      type: "password",
+      placeholder: "Enter your new password",
+      label: "New Password",
+      componentType: "input",
+    },
+    {
+      id: "confirmPassword",
+      type: "password",
+      placeholder: "Confirm your new password",
+      label: "Confirm Password",
+      componentType: "input",
+    }
+  ];
   export const adminAddProductformControls = [
     {
       id: "name",

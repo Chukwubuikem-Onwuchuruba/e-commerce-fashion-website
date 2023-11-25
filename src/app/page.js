@@ -1,5 +1,5 @@
 "use client";
-import homeImg from './homePic.png'
+
 import { GlobalContext } from "@/context";
 import { getAllAdminProducts } from "@/services/product";
 import { useRouter } from "next/navigation";
