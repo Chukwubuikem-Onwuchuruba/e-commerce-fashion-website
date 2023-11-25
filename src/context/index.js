@@ -71,6 +71,8 @@ export default function GlobalState({ children }) {
   useEffect(() => {
     if (
       pathName !== "/register" &&
+      pathName !== "/reset-password" &&
+      pathName !== "/forgot-password" &&
       !pathName.includes("product") &&
       pathName !== "/" &&
       user &&

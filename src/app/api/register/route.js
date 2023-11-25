@@ -4,10 +4,19 @@ import { hash } from "bcryptjs";
 import Joi from "joi";
 import { NextResponse } from "next/server";
 
+const passwordComplexityRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()-_+=])[0-9a-zA-Z!@#$%^&*()-_+=]{8,}$/;
+
 const schema = Joi.object({
   name: Joi.string().required(),
   email: Joi.string().email().required(),
-  password: Joi.string().min(6).required(),
+  password: Joi.string()
+    .min(6)
+    .regex(passwordComplexityRegex)
+    .required()
+    .messages({
+      'string.pattern.base':
+        'Password must be at least 6 characters long and include at least one lowercase letter, one uppercase letter, one number, and one special character.',
+    }),
   role: Joi.string().required(),
 });
 
