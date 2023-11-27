@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useContext, useEffect, useState } from "react";
 
 export default function Home() {
-  const { isAuthUser } = useContext(GlobalContext);
+  const { user,isAuthUser } = useContext(GlobalContext);
 
   const [products, setProducts] = useState([]);
   const router = useRouter();
@@ -27,6 +27,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      {user && <h1 className="flex items-start max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-stone-100 bg-stone-800">Hi, {user.name}!</h1>}
       <section className="">
         <div className="grid max-w-screen-xl px-4 py-8 mx-suto  lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">

@@ -92,7 +92,7 @@ export default function AdminView() {
                         <div className="flex flex-col gap-2">
                           <div className="flex items-center">
                             <p className="mr-3 text-sm font-medium text-gray-900">
-                              User Name:
+                              Customer Name:
                             </p>
                             <p className="text-sm  font-semibold text-gray-900">
                               {item?.user?.name}
@@ -100,7 +100,7 @@ export default function AdminView() {
                           </div>
                           <div className="flex items-center">
                             <p className="mr-3 text-sm font-medium text-gray-900">
-                              User Email:
+                              Customer Email:
                             </p>
                             <p className="text-sm  font-semibold text-gray-900">
                               {item?.user?.email}

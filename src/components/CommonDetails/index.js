@@ -116,10 +116,7 @@ export default function CommonDetails({ item }) {
             </div>
             <ul className="mt-8 space-y-2">
               <li className="flex items-center text-left text-sm font-medium text-gray-600">
-                {item && item.deliveryInfo}
-              </li>
-              <li className="flex items-center text-left text-sm font-medium text-gray-600">
-                {"Cancel anytime"}
+              {item.deliveryInfo === "Free" ? "Delivery Fee: Free" : "Delivery Fee: $" + item.deliveryInfo}
               </li>
             </ul>
             <div className="lg:col-span-3">
