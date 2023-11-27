@@ -19,8 +19,8 @@ The ecommerce fashion website includes the following features:
 - **Order Management:** An efficient order management system to track order status, shipping information, and purchase history.
 
 ## Technologies Used
-- **Frontend:** React, Tailwind CSS
-- **Backend:** MongoDB
+- **Frontend:** React, Tailwind CSS, Next.js 13
+- **Backend:** MongoDB, Firebase, JavaScript, Strapi
 - **Payment Processing:** Stripe
 
 ## Project Setup
@@ -35,11 +35,10 @@ The ecommerce fashion website includes the following features:
 2. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ## Testing
-- **Unit Testing:** Implement unit tests for core functionalities using Jest and React Testing Library.
 - **End-to-End Testing:** Perform end-to-end testing to ensure the overall flow of the application is working correctly.
 
 ## Future Enhancements
 - **Wishlist:** Implement a wishlist feature to allow users to save items they wish to purchase later.
 - **Product Recommendations:** Integrate product recommendation algorithms to suggest relevant items based on user preferences.
-- **Real-time Order Tracking:** Provide real-time order tracking updates to keep users informed about their order status.
-- **Mobile Optimization:** Optimize the website for mobile devices to ensure a seamless user experience across all platforms.
+- **Enhanced Filters:**  Refine searches based on size, price range, and merchant preferences.
+- **Rating and Review System:** Integrate a rating and review system giving users the ability to share their experiences by assigning star ratings and   leaving comments for products they've purchased.
