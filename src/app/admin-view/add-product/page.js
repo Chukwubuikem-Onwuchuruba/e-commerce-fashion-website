@@ -11,7 +11,7 @@ import {
     AvailableSizes,
     adminAddProductformControls,
     firebaseConfig,
-    firebaseStroageURL,
+    firebaseStorageURL,
 } from "@/utils";
 import { initializeApp } from "firebase/app";
 import {
@@ -26,7 +26,7 @@ import { toast } from "react-toastify";
 import { resolve } from "styled-jsx/css";
 
 const app = initializeApp(firebaseConfig);
-const storage = getStorage(app, firebaseStroageURL);
+const storage = getStorage(app, firebaseStorageURL);
 
 const createUniqueFileName = (getFile) => {
     const timeStamp = Date.now();
