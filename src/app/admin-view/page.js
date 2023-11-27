@@ -75,6 +75,9 @@ export default function AdminView() {
         <div>
           <div className="px-4 py-6 sm:px-8 sm:py-10">
             <div className="flow-root">
+              {user && <h1 className="w-full text-center max-w-2xl mb-4 text-8xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
+              Hi, {user.name}!
+              </h1>}
               {allOrdersForAllUsers && allOrdersForAllUsers.length ? (
                 <ul className="flex flex-col gap-4">
                   {allOrdersForAllUsers.map((item) => (
