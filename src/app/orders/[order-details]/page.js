@@ -54,7 +54,7 @@ export default function OrderDetails() {
     <div className="py-14 px-4 md:px-6">
       <div className="flex justify-start items-start space-y-2 flex-col">
         <h1 className="text-3xl lg:text-4xl font-bold leading-7 lg:leading-9 text-gray-900">
-          Order #{orderDetails && orderDetails._id}
+          Order#: {orderDetails && orderDetails._id}
         </h1>
         <p className="text-base font-medium leadong-6 text-gray-600">
           {orderDetails &&
@@ -145,18 +145,18 @@ export default function OrderDetails() {
           <div className="flex justify-between xl:h-full items-stretch w-full flex-col mt-6 md:mt-0">
             <div className="flex justify-center md:justify-start xl:flex-col flex-col md:space-x-6 lg:space-x-8 xl:space-x-0 space-y-4 md:space-y-0 xl:space-y-12 md:flex-row items-center md:items-start ">
               <div className="flex justify-center md:justify-start items-center md:items-start flex-col space-y-4 xl:mt-8">
-                <p>Shipping Address</p>
+                <b>Shipping Address</b>
                 <p>
-                  Address :{" "}
+                  Address:{" "}
                   {orderDetails && orderDetails.shippingAddress.address}
                 </p>
-                <p>City :{orderDetails && orderDetails.shippingAddress.city}</p>
+                <p>City: {" "}{orderDetails && orderDetails.shippingAddress.city}</p>
                 <p>
-                  Country :{" "}
+                  Country:{" "}
                   {orderDetails && orderDetails.shippingAddress.country}
                 </p>
                 <p>
-                  Postal Code :{" "}
+                  Postal Code:{" "}
                   {orderDetails && orderDetails.shippingAddress.postalCode}
                 </p>
               </div>
