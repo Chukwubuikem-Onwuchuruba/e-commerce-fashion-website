@@ -42,3 +42,4 @@ The ecommerce fashion website includes the following features:
 - **Product Recommendations:** Integrate product recommendation algorithms to suggest relevant items based on user preferences.
 - **Enhanced Filters:**  Refine searches based on size, price range, and merchant preferences.
 - **Rating and Review System:** Integrate a rating and review system giving users the ability to share their experiences by assigning star ratings and leaving comments for products they've purchased.
+
